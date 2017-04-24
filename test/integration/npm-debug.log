@@ -1,0 +1,51 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/Cellar/node/6.9.1/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'run',
+1 verbose cli   'test:integration' ]
+2 info using npm@3.10.8
+3 info using node@v6.9.1
+4 verbose run-script [ 'pretest:integration',
+4 verbose run-script   'test:integration',
+4 verbose run-script   'posttest:integration' ]
+5 info lifecycle tracking@1.0.0~pretest:integration: tracking@1.0.0
+6 silly lifecycle tracking@1.0.0~pretest:integration: no script for pretest:integration, continuing
+7 info lifecycle tracking@1.0.0~test:integration: tracking@1.0.0
+8 verbose lifecycle tracking@1.0.0~test:integration: unsafe-perm in lifecycle true
+9 verbose lifecycle tracking@1.0.0~test:integration: PATH: /usr/local/lib/node_modules/npm/bin/node-gyp-bin:/Users/tuta/sandbox/tracking/node_modules/.bin:/usr/local/Cellar/node/6.9.1/bin:/Users/tuta/.rvm/gems/ruby-2.3.0/bin:/Users/tuta/.rvm/gems/ruby-2.3.0@global/bin:/Users/tuta/.rvm/rubies/ruby-2.3.0/bin:/Users/tuta/.jenv/shims:/Users/tuta/.jenv/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/MacGPG2/bin:/Users/tuta/.rvm/bin
+10 verbose lifecycle tracking@1.0.0~test:integration: CWD: /Users/tuta/sandbox/tracking
+11 silly lifecycle tracking@1.0.0~test:integration: Args: [ '-c',
+11 silly lifecycle   'NODE_ENV=test mocha --opts src/test/integration/mocha.opts src/test/integration/**/*_spec.js' ]
+12 silly lifecycle tracking@1.0.0~test:integration: Returned: code: 1  signal: null
+13 info lifecycle tracking@1.0.0~test:integration: Failed to exec test:integration script
+14 verbose stack Error: tracking@1.0.0 test:integration: `NODE_ENV=test mocha --opts src/test/integration/mocha.opts src/test/integration/**/*_spec.js`
+14 verbose stack Exit status 1
+14 verbose stack     at EventEmitter.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/lifecycle.js:255:16)
+14 verbose stack     at emitTwo (events.js:106:13)
+14 verbose stack     at EventEmitter.emit (events.js:191:7)
+14 verbose stack     at ChildProcess.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/spawn.js:40:14)
+14 verbose stack     at emitTwo (events.js:106:13)
+14 verbose stack     at ChildProcess.emit (events.js:191:7)
+14 verbose stack     at maybeClose (internal/child_process.js:877:16)
+14 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:226:5)
+15 verbose pkgid tracking@1.0.0
+16 verbose cwd /Users/tuta/sandbox/tracking/src/test/integration
+17 error Darwin 15.6.0
+18 error argv "/usr/local/Cellar/node/6.9.1/bin/node" "/usr/local/bin/npm" "run" "test:integration"
+19 error node v6.9.1
+20 error npm  v3.10.8
+21 error code ELIFECYCLE
+22 error tracking@1.0.0 test:integration: `NODE_ENV=test mocha --opts src/test/integration/mocha.opts src/test/integration/**/*_spec.js`
+22 error Exit status 1
+23 error Failed at the tracking@1.0.0 test:integration script 'NODE_ENV=test mocha --opts src/test/integration/mocha.opts src/test/integration/**/*_spec.js'.
+23 error Make sure you have the latest version of node.js and npm installed.
+23 error If you do, this is most likely a problem with the tracking package,
+23 error not with npm itself.
+23 error Tell the author that this fails on your system:
+23 error     NODE_ENV=test mocha --opts src/test/integration/mocha.opts src/test/integration/**/*_spec.js
+23 error You can get information on how to open an issue for this project with:
+23 error     npm bugs tracking
+23 error Or if that isn't available, you can get their info via:
+23 error     npm owner ls tracking
+23 error There is likely additional logging output above.
+24 verbose exit [ 1, true ]
